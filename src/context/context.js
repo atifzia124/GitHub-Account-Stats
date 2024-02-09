@@ -73,10 +73,6 @@ const GithubProvider = ({ children }) => {
 
   // error
   useEffect(checkRequests, []);
-  // get initial user
-  useEffect(() => {
-    searchGithubUser("visionmedia");
-  }, []);
   return (
     <GithubContext.Provider
       value={{
